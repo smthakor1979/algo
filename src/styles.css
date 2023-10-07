@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import url('<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">') */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+
+}
