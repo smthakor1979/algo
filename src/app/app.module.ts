@@ -12,12 +12,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { MatDrawer } from '@angular/material/sidenav';
+import { Route, RouterModule } from '@angular/router';
+import { TerminalComponent } from './terminal/terminal.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     MenubarComponent,
+    TerminalComponent,
+    // MatDrawer,
+    // MatDrawerContainer
+    
+    
     
   ],
   imports: [
@@ -28,9 +37,11 @@ import { MatDrawer } from '@angular/material/sidenav';
     MatToolbarModule,
     MatIconModule,
     MatCardModule
+    
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+

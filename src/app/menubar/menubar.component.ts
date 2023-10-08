@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { navbarData } from '../menubar/navdata';
 
 @Component({
   selector: 'app-menubar',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./menubar.component.css']
 })
 export class MenubarComponent {
-
+  collapsed = false;
+  navdata = navbarData;
 }
