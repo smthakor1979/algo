@@ -1,15 +1,17 @@
 <mat-toolbar>
-  <button mat-icon class="" aria-label="Example icon-button with menu icon">
-    <mat-icon mat-button (click)="drawer.toggle()">menu</mat-icon>
-    <!-- <app-sidenav></app-sidenav> -->
+  <button mat-icon class="btn-color" aria-label="Example icon-button with menu icon">
+    <mat-icon mat-button (click)="drawer.toggle()">menu
+      
+    </mat-icon>
   </button>
-    
+  
   <span>Web Algo</span>
+  <button> Login </button>  
 </mat-toolbar>
 
-<!-- <mat-drawer-container class="example-container" autosize> -->
+<mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <app-sidenav></app-sidenav>
   </mat-drawer>
 
-<!-- </mat-drawer-container> -->
+</mat-drawer-container>

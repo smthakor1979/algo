@@ -14,4 +14,9 @@ export const navbarData = [
         icon: 'fal, fa-home',
         lable: 'Chart'
     },
+    {
+        routelink: 'Setting',
+        icon: 'fal, fa-home',
+        lable: 'Setting'
+    },
 ];
