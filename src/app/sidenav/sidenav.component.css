@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+
 .sidenav {
-    background: rgb(218, 244, 244);
+  background-color: antiquewhite;
     transition: all .5s ease;
-    position: fixed;
-    z-index: 90;
-    top: auto;
-    width: 5rem;
+    z-index: 100;
+    top: 0;
+    width: 10rem;
     height: 100vh;
     box-shadow: 0.63rem 0 1.25rem 0 lightgray;
   }
+  
