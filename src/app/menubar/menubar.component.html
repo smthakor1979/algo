@@ -1,25 +1,38 @@
-<mat-toolbar>
-  <button mat-icon class="btn-color" aria-label="Example icon-button with menu icon">
-    <mat-icon mat-button (click)="drawer.toggle()">menu
-      
-    </mat-icon>
-  </button>
-  
-  <span>Web Algo</span>
-  <button> Login </button>  
-</mat-toolbar>
 
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <div class="sidenav">
-      <ul class="nav-list">
-          <li class="nav-list-item" *ngFor = "let item of navdata">
-              <span>
-              <a href="/terminal"> {{item.lable}}</a>
-              </span>
-          </li>
-      </ul>
+<div class="navbar-box" cdkDrag>
+  <div class="navbar">
+    <a href="#home">WebAlgo</a>&nbsp;&nbsp;
+    <table class="live-index" style="width: auto; background-color: rgb(233, 239, 248);">
+      <tr><td style="background-color: rgb(184, 217, 243);">NIFTY : 15750.00</td>&nbsp;
+        <td style="background-color: rgb(184, 217, 243);">BN Nifty : 15750.00</td>&nbsp;
+        <td style="background-color: rgb(184, 217, 243);">FIN Nifty : 15750.00</td>&nbsp;
+        <td style="background-color: rgb(184, 217, 243);">MidCap Nifty : 15750.00</td>&nbsp;
+      </tr>
+      <tr><td style="background-color: rgb(184, 217, 243);">+350  1.45%</td>&nbsp;
+        <td style="background-color: rgb(184, 217, 243);">+350  1.45%</td>&nbsp;
+        <td style="background-color: rgb(184, 217, 243);">+350  1.45%</td>&nbsp;
+        <td style="background-color: rgb(184, 217, 243);">+350  1.45%</td>&nbsp;
+      </tr>
+    </table>
   </div>
-  </mat-drawer>
+</div>  
+  
+<div class="sidebar-box" >
+  <div class="sidebar">
+    <ul class="sidebar-list">
+      <li>
+        
+        <i class="fa-solid fa-money-bill"></i>
+      </li>
+      
+    </ul>
+  </div>
+  
+</div>
 
-</mat-drawer-container>
+<script>
+  var toggleClick = document.querySelector(".sidebar-box");
+  toggleClick.addEventListener('click', ()=> {
+    toggleClick.classList.toggle('active');
+  })
+</script>

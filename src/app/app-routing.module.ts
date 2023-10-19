@@ -4,12 +4,18 @@ import { TerminalComponent } from './terminal/terminal.component';
 
 const routes: Routes = [
   {
-    path: "terminal", component: TerminalComponent
-  }
-];
+    path: "*", 
+  },
+  
+  // {
+  //   path: "terminal", 
+  //   component: TerminalComponent
+  // },
+  
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule{}
