@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenubarComponent } from 'src/app/menubar/menubar.component';
 
 @Component({
   selector: 'app-terminal',
@@ -6,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./terminal.component.css']
 })
 export class TerminalComponent {
-
-  constructor(
-    
-  ) {}
 
 }

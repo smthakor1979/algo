@@ -1,16 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TerminalComponent } from './terminal/terminal.component';
+import { TerminalComponent } from './component/terminal/terminal.component';
+import { LoginComponent } from './component/login/login.component';
+import { RegisterComponent } from './component/register/register.component';
 
 const routes: Routes = [
   {
-    path: "*", 
+    path: 'login' ,
+    component: LoginComponent 
   },
-  
-  // {
-  //   path: "terminal", 
-  //   component: TerminalComponent
-  // },
+  {
+    path: 'register' ,
+    component: RegisterComponent 
+  },
+  {
+    path: 'terminal' ,
+    component: TerminalComponent 
+  },
+  {
+    path: '', pathMatch: 'full', 
+    redirectTo: 'terminal'
+  },
   
 ]
 
