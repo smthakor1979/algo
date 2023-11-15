@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: '', pathMatch: 'full', 
-    redirectTo: 'terminal'
+    redirectTo: 'register'
   },
   
 ]

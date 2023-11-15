@@ -1,23 +1,20 @@
 import { Injectable } from '@angular/core';
-import { LocalStorageService } from './localstorage.service';
-import { ApiHttpService } from './api.service';
-// import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { LocalStorageService } from '../services/localstorage.service';
+import { User } from '../model/user.model';
+import { environment } from 'src/environment';
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-
-  constructor(private ls: LocalStorageService, http: ApiHttpService ) { }
   
-  public isLoggedIn() {
-    if(this.ls.getItem('token')){
-      return true;
-    }else{
-      return false;
-    }
+  constructor(private router: Router,
+    private http: HttpClient, ls:LocalStorageService) {
+      
   }
-  /* for broker login */
-  // public login(data: any): Observable<any> {
-  //   return this.http.post('');
-  // }
-}
+  register(user: User) {
+    return this.http.post(`${environment.apiUrl}/register`, user);
+}}

@@ -16,6 +16,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { TerminalComponent } from './component/terminal/terminal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatMenuModule} from '@angular/material/menu';
+import { AuthService } from './services/auth.service';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     DragDropModule,
     CdkDrag,
+    MatMenuModule,
     MatButtonModule,
     MatTooltipModule,
     AppRoutingModule,
@@ -40,7 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
 
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

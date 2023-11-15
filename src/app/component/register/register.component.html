@@ -1,1 +1,27 @@
-<p>register works</p>>
+<div class="container col-md-6 offset-md-3 mt-5">
+    <div class="card">
+        <h4 class="card-header">Register</h4>
+        <div class="card-body">
+            <form [formGroup] = 'signUpForm' (ngSubmit)="signUp">
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" formControlName="email" class="form-control" >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mobile</label>
+                    <input type="text" formControlName="mobile" class="form-control"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="text" formControlName="password" class="form-control"  >
+                </div>
+                <div class="card-footer">
+                    <a routerLink="/register" class="btn btn-link">Submit</a>
+                    <span>Already have an account? 
+                    <a routerLink="/login">Login</a></span>
+                    <a routerLink="../login" class="btn btn-link">Cancel</a>
+                </div>
+            </form>
+        
+    
+</div>
